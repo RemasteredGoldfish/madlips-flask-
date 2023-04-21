@@ -11,6 +11,13 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container px-5">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li><a href="{{ url_for('paniek') }}">paniek</a></li>
+        </ul>
+      </div>
+    </nav>
     <div class="container">
         <div class="form">
             <h1>Onkunde</h1>
@@ -43,7 +50,7 @@
                     <label for="question7">Wat is het ergste dat je kan overkomen?</label>
                     <input type="text" class="form-control" name="examplequestion7" id="examplequestion7" placeholder="Insert your answer">
                 </div>
-                <button type="result_form" class="btn btn-primary">Submit</button>
+                <button type="result_formTwo" class="btn btn-primary">Submit</button>
             </form>
         </div>
       </div> 

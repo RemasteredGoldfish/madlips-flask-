@@ -11,10 +11,17 @@
     <link rel="stylesheet" href="style.css">
   </head>
   <body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+      <div class="container px-5">
+        <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+          <li action="{{ url_for('submit_form') }}" class="nav-item"><a class="nav-link active" aria-current="page" href="index.html">onkunde</a></li>
+        </ul>
+      </div>
+    </nav>
     <div class="container">
         <div class="form">
-            <h1>Onkunde</h1>
-            <form action="{{ url_for('submit_form') }}" method="POST">
+            <h1>Er Heerst paniek</h1>
+            <form action="{{ url_for('submit_formTwo') }}" method="POST">
                 <div class="form-group">
                     <label for="question1">Welk dier zou je nooit als huisdier willen hebben?</label>
                     <input type="text" class="form-control" name="question1" id="question1" placeholder="Insert your answer">
@@ -47,7 +54,7 @@
                     <label for="question7">wat is je favoriete bezigheid?</label>
                     <input type="text" class="form-control" name="question8" id="question8" placeholder="Insert your answer">
                 </div>
-                <button type="result_form" class="btn btn-primary">Submit</button>
+                <button type="result_formtwo" class="btn btn-primary">Submit</button>
             </form>
         </div>
       </div> 
