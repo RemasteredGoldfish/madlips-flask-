@@ -36,6 +36,7 @@ def submit_formTwo():
     question7 = request.form.get('question7')
     question8 = request.form.get('question8')
 
+    #result
     result = f"Er heerst paniek in het koninkrijk {question1}. Koning Egmond is ten einde raad en als koning {question6} ten einde raad is, dan roept hij zijn ten-einde-raadsheer {question2}.\n'{question2}! Het is een ramp! Het is een schande!'\n'Sire, Majesteit, Uwe Luidruchtigheid, wat is er aan de hand?'\n'Mijn {question1} is verdwenen! Zo maar, zonder waarschuwing. En ik had net {question5} voor hem gekocht!'\n'Majesteit, uw {question5} komt vast vanzelf weer terug?'\n'Ja da's leuk en aardig maar hoe moet ik in de tussentijd {question8} leren?'\n'Maar Sire, daar kunt u toch uw {question7} gebruiken.'\n'{question2}, je hebt helemaal gelijk! Wat zou ik doen als ik jou niet had.'\n'{question4}, Sire.'"
 
     return render_template('result_formtwo.html', result=result)
